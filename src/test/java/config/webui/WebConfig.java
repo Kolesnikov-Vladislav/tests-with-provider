@@ -1,4 +1,4 @@
-package Config.WebUi;
+package config.webui;
 
 import org.aeonbits.owner.Config;
 
@@ -28,6 +28,7 @@ public interface WebConfig extends Config {
 
     // зачитываем данные из командной строки
     @Key("remoteUrl")
+    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     URL getRemoteUrl();
 
     @Key("isRemote")

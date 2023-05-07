@@ -1,8 +1,10 @@
-package Config;
+package config;
 
-import Config.WebUi.WebConfig;
+import config.webui.WebConfig;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 public class SettingForTest {
@@ -15,11 +17,11 @@ public class SettingForTest {
         webDriverProvider.webConfig();
     }
 
-/*    @AfterEach
+   @AfterEach
     public void getAttach(){
         Attach.addVideo();
         Attach.browserConsoleLogs();
         Attach.pageSource();
         Attach.screenshotAs("ScreenShot");
-    }*/
+    }
 }

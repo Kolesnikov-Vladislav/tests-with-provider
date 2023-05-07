@@ -1,6 +1,6 @@
-package Config;
+package config;
 
-import Config.WebUi.WebConfig;
+import config.webui.WebConfig;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.remote.DesiredCapabilities;
 

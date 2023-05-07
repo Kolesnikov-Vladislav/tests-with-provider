@@ -1,6 +1,6 @@
-package Config;
+package config;
 
-import Config.WebUi.WebConfig;
+import config.webui.WebConfig;
 import org.aeonbits.owner.ConfigFactory;
 
 public enum WebDriverConfig {
