@@ -46,3 +46,8 @@ test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+task block(type: Test) {
+    useJUnitPlatform {
+        includeTags("block")
+    }
+}

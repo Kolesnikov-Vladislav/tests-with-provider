@@ -4,8 +4,10 @@ import org.aeonbits.owner.Config;
 
 import java.net.URL;
 
-@Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({
+import static org.aeonbits.owner.Config.*;
+
+@LoadPolicy(LoadType.MERGE)
+@Sources({
         "system:properties",
         "classpath:${place}.properties",
         "file:~/${place}.properties",

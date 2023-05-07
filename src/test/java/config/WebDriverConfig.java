@@ -13,6 +13,7 @@ public enum WebDriverConfig {
             );
 
     public WebConfig read() {
+
         return webConfig;
     }
 }
