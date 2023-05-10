@@ -8,6 +8,7 @@ public class WebDriverProvider {
     private final WebConfig webConfig;
 
     public WebDriverProvider(WebConfig webConfig) {
+
         this.webConfig = webConfig;
     }
 
@@ -16,7 +17,7 @@ public class WebDriverProvider {
         Configuration.browserVersion = webConfig.getBrowserVersion();
         Configuration.baseUrl = webConfig.getBaseUrl();
         if (webConfig.isRemote()) {
-            Configuration.remote = webConfig.getRemoteUrl().toString();
+            Configuration.remote = webConfig.getRemoteUrl();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
