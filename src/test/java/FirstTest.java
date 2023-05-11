@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
-public class FirstTest {
+public class FirstTest extends SettingForTest{
     PageMainPageGitHub pageMainPageGitHub = new PageMainPageGitHub();
 
     @Test
